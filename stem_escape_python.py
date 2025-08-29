@@ -95,13 +95,14 @@ class STEMEscapeGame:
             widget.destroy()
         self.timer_running = False
     
-            tk.Label(diff_frame, text="🎚️ Danger Level:", font=('Arial', 14, 'bold'), 
+        tk.Label(diff_frame, text="🎚️ Danger Level:", font=('Arial', 14, 'bold'), 
                 fg='#ecf0f1', bg='#34495e').pack(pady=10)
         
         self.difficulty_var = tk.StringVar(value=self.game_state['difficulty'])
         
         diff_button_frame = tk.Frame(diff_frame, bg='#34495e')
         diff_button_frame.pack(pady=5)
+        #HI!
         
         diff_colors = {'easy': '#27ae60', 'medium': '#f39c12', 'hard': '#e74c3c'}
         diff_labels = {'easy': '🟢 EASY', 'medium': '🟡 MEDIUM', 'hard': '🔴 HARD'}
